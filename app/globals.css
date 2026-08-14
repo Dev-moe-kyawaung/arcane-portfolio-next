@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page-min-height: 100dvh;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-void text-white antialiased;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(123,92,255,.12), transparent 28%),
+    radial-gradient(circle at 80% 20%, rgba(202,162,78,.08), transparent 24%),
+    linear-gradient(180deg, #06050b, #0d1020);
+  min-height: var(--page-min-height);
+}
+
+.light body {
+  background: linear-gradient(180deg, #f5f1e6, #fbf8f0);
+  color: #17121f;
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto max-w-7xl px-6 py-20 lg:px-8;
+    min-height: var(--page-min-height);
+  }
+  .glass-card {
+    @apply rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl;
+  }
+  .section-label {
+    @apply text-xs uppercase tracking-[0.35em] text-gold;
+  }
+  .section-title {
+    @apply mt-3 font-display text-4xl leading-tight text-white md:text-5xl;
+  }
+  .solid-btn {
+    @apply inline-flex items-center justify-center rounded-full bg-gold px-5 py-3 font-semibold text-black transition hover:opacity-90;
+  }
+  .ghost-btn {
+    @apply inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 py-3 font-semibold text-white transition hover:border-gold/40;
+  }
+}
+
+.prose {
+  @apply prose-invert max-w-none;
+}
+
+.prose a {
+  @apply text-gold;
+}
