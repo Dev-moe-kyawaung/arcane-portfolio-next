@@ -1,0 +1,7 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#06050b"/>
+  <circle cx="600" cy="315" r="180" stroke="#caa24e" stroke-width="4" stroke-dasharray="10 10"/>
+  <circle cx="600" cy="315" r="120" stroke="#7b5cff" stroke-width="3" stroke-opacity="0.6"/>
+  <text x="600" y="290" fill="#f7f2e7" font-size="48" font-family="Cinzel, serif" text-anchor="middle">Moe Kyaw Aung</text>
+  <text x="600" y="350" fill="#caa24e" font-size="24" font-family="Inter, sans-serif" text-anchor="middle">Arcane Code Sorcerer</text>
+</svg>
